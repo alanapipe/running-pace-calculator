@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--tells browser this is html5-->
+<html lang="en">
+  <!--tells browser what language the tag is in-->
+
+  <head>
+    <!--for robots and SEO to crawl-->
+    <meta charset="utf-8">
+    <!-- tells browser to expect every character that exists-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--tells the site not to be bigger than the screen-->
+    <title>Pace Calculator</title>
+    <!--this title is reflected in the title tab by default-->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--links attach external documents. The rel attribute is relationship-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!--stylesheets -->
+    <link rel="stylesheet" href="pace-styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+    <!--begin content-->
+    <div class='calc-container'>
+
+      <p>time:
+        <input id='hours' placeholder="hh" type='number' min='0' max='999'>:
+        <input id='minutes' placeholder="mm" type='number' min='0' max='59'>:
+        <input id='seconds' placeholder="ss" type='number' min='0' max='59'>
+      </p>
+      <p>miles:
+        <input id='distance' placeholder="miles" type='number' min='0' max='999'>
+      </p>
+
+      <!-- <select>
+            	<option type="text" id="miles" value="1.6">miles</option>
+            	<option type="text" id="kilometres" value="1">kilometres</option>
+            </select> -->
+      <button id='calculate_btn'>calculate pace</button>
+      <br>
+
+      <p id="pace" />
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="pace-calculator.js"></script>
+
+  </body>
+
+</html>

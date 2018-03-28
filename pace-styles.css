@@ -1,0 +1,12 @@
+.calc-container {
+  height: 100vh;
+  padding-left: 25px;
+}
+
+input {
+  width: 35px;
+}
+
+button:hover {
+  background-color: yellow;
+}
